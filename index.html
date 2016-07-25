@@ -115,7 +115,7 @@
        
         <p>In this early preview, you can view the specific event types listed below for our first five initial sources:</p>
 
-       <table ALIGN=CENTER VALIGN=CENTER BORDER=1 CELLPADDING=10 CELLSPACING=10>
+       <table class="table table-striped">
   <tbody>
     <tr>
       <th scope="col">Data source</th>
@@ -125,7 +125,7 @@
       <th scope="col">Event type</th>
     </tr>
     <tr>
-      <td>Crossref to DataCite</td>
+      <th scope="row">Crossref to DataCite</th>
       <td>Crossref Metadata API</td>
       <td>Crossref pushes Crossref - DataCite links into Event Data once per day</td>
       <td>Links to DataCite DOIs as cited in Crossref DOIs</td>
@@ -133,28 +133,28 @@
 	</td>
     </tr>
     <tr>
-      <td>DataCite to Crossref</td>
+      <th scope="row">DataCite to Crossref</th>
       <td>DataCite API</td>
       <td>DataCite pushes DataCite - Crossref links into DataCite Event Data once per day. Crossref then pulls these links into Event Data once per day.</td>
       <td>Links to Crossref DOIs as cited in DataCite DOIs</td>
       <td>Every citation from a DataCite DOI to a Crossref DOI</td>
     </tr>
     <tr>
-      <td>Wikipedia</td>
+      <th scope="row">Wikipedia</th>
       <td>Full streaming data from Wikimedia</td>
       <td>Streaming (near real time)</td>
       <td>Edits to Wikipedia pages that mention a DOI directly, or edits that remove such a mention</td>
       <td>A 'references' event type for the reference from the Wikipedia page to the DOI. If the action field is 'delete' then this indicates that the reference was removed.</td>
     </tr>
     <tr>
-      <td>Mendeley</td>
+      <th scope="row">Mendeley</th>
       <td>Mendeley API</td>
       <td>Pulling data. Rate TBC, currently daily</td>
       <td>Counts of how many times a DOI has been bookmarked and liked</td>
       <td>The Mendeley Data Source provides the event type of bookmarks and likes. Each one has a date stamp and a count.</td>
     </tr>
     <tr>
-      <td>Twitter</td>
+      <th scope="row">Twitter</th>
       <td>Full streaming data from Gnip</td>
       <td>Streaming (near real time)</td>
       <td>DOIs (or DOI domain URLs) mentioned in tweets</td>
